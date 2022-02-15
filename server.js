@@ -7,7 +7,7 @@ const Morgan = require('morgan')
 const PORT = process.env.PORT || 7777
 
 App.use(Morgan('dev'))
-
+App.use(Cors())
 App.listen(PORT, () => { console.log(`Server running in port : ${ PORT }`) })
 
 
